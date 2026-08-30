@@ -1,0 +1,6 @@
+RewriteEngine On
+
+# HTTPまたはwww版をHTTPS・非www版へ301転送
+RewriteCond %{HTTPS} off [OR]
+RewriteCond %{HTTP_HOST} ^www\.rikusoumatch\.com$ [NC]
+RewriteRule ^(.*)$ https://rikusoumatch.com/$1 [R=301,L]
