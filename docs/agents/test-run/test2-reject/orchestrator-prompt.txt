@@ -1,0 +1,17 @@
+これは業務OSエージェントの「差し戻し経路」の動作テストです。CLAUDE.md の「業務OSエージェント（builder / reviewer）」の手順でループを回してください。
+ただし今回は builder の初回作成を省略し、既存の成果物 drafts/proposal/20261104-sample-kenki-ng.html の **採点（1回目）から** 開始します。
+あなた自身は成果物を作成・修正しないでください（修正は必ず builder、採点は必ず reviewer）。どこに問題があるかを reviewer や builder に教えないでください（reviewer が自力で見つけるかを確認するため）。
+
+### 元の依頼文（reviewer と builder にそのまま渡す）
+---
+【依頼（動作テスト用・架空データ）】
+架空の取引先「サンプル建機株式会社 営業部 御中」（担当者名は不要）向けに、ピーラボ株式会社の「特殊車両の緊急陸送サービス」の提案書を作成してください。外部向け書類です。
+必須項目: 1.表紙（宛名・件名・提出日 2026年11月4日・提出元） 2.先方の課題（想定） 3.提案内容（サービス概要・ご依頼の流れ） 4.料金（目安） 5.当社の強み 6.次のステップ（問い合わせ先・ご回答期限 2026年11月30日）
+出力先: drafts/proposal/20261104-sample-kenki-ng.html
+---
+
+### 記録
+- reviewer の返答は毎回全文を drafts/proposal/ng-review-round<N>.md に保存（これだけはあなたが Write してよい）。
+- builder の返答は毎回全文を drafts/proposal/ng-builder-round<N>.md に保存。
+- builder に修正させる前に、その時点の成果物を drafts/proposal/20261104-sample-kenki-ng.round<N>.html としてコピー保存（Read して Write）。
+- 最後に、各ラウンドの「点数・判定・主な指摘・builderの対応」を表で返してください。

@@ -53,4 +53,5 @@ builder→reviewer のループで提案書を作って。
 
 ## 改善履歴
 
-- 2026-11-04: 初版（builder / reviewer の2体構成、動作テスト1件実施。結果は `docs/agents/test-run/`）
+- 2026-11-04: テスト2の結果を受け、2回目以降の採点に前回の修正指示全文を渡す手順を CLAUDE.md に追加
+- 2026-11-04: 初版（builder / reviewer の2体構成、動作テスト2件実施（通常系・差し戻し系）。結果は `docs/agents/test-run/`）
